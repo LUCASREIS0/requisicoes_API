@@ -1,7 +1,6 @@
 
 <p><h1>🚧 Projeto em Desenvolvimento - JavaScript: criando requisições 🚧</h1></p>
 
-
 <p align="center"> Página inicial e formulário de cadastro de vídeos, uma plataforma de compartilhamento de vídeos.</p>
 <p align="center"> 🚧 Projeto Em Desenvolvimento 🚧</p>
 
