@@ -13,7 +13,31 @@ async function listaVideos() {
     return conexaoConvertida;
 }
 
-// Exporta um objeto chamado conectaApi, que contém a função listaVideos
+//Define uma função assíncrona chamada criaVideo
+async function criaVideo(titulo, descricao, url, imagem) {
+    // Realiza uma solicitação POST para enviar os dados do novo vídeo para o servidor
+    const conexao = await fetch("http://localhost:3000/videos", {
+        method: "POST", // Método HTTP POST para enviar dados
+        headers: {
+            "Content-type": "application/json" // Define o tipo de conteúdo como JSON
+        },
+        body: JSON.stringify({ // Converte os parâmetros para um objeto JSON
+            titulo: titulo, // Título do vídeo
+            descricao: `${descricao} mil visualizações`, // Descrição do vídeo com visualizações simuladas
+            url: url, // URL do vídeo
+            imagem: imagem // URL da imagem do vídeo
+        })
+    }); 
+
+    // Converte a resposta da solicitação para JSON
+    const conexaoConvertida = conexao.json();
+
+    // Retorna a resposta convertida
+    return conexaoConvertida;
+}
+
+// Exporta um objeto chamado conectaApi, que contém as funções listaVideos e criaVideo
 export const conectaApi = {
-    listaVideos
+    listaVideos, // Função para listar vídeos
+    criaVideo // Função para criar um novo vídeo
 }
