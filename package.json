@@ -1,0 +1,14 @@
+{
+  "name": "requisicoes_api",
+  "version": "1.0.0",
+  "description": "<p><h1>🚧 Projeto em Desenvolvimento - JavaScript: criando requisições 🚧</h1></p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
