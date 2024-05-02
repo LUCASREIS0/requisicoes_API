@@ -15,11 +15,11 @@ function constroiCard(titulo, descricao, url, imagem) {
     title="${titulo}" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
-<div class="descricao-video">
-    <img src="${imagem}" alt="logo canal alura">
-    <h3>${titulo}</h3>
-    <p>${descricao}</p>
-</div>`;
+    <div class="descricao-video">
+        <img src="${imagem}" alt="logo canal alura">
+        <h3>${titulo}</h3>
+        <p>${descricao}</p>
+    </div>`;
     // Retorna o elemento `li` criado
     return video;
 }
