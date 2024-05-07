@@ -26,11 +26,15 @@ export default function constroiCard(titulo, descricao, url, imagem) {
 
 // Define uma função assíncrona `listaVideos` que lista os vídeos da API
 async function listaVideos() {
-    // Aguarda a resposta da função `listaVideos` da API
-    const listaApi = await conectaApi.listaVideos();
-    // Para cada elemento na lista da API, cria um card de vídeo e o adiciona à lista no DOM
-    listaApi.forEach(elemento => lista.appendChild(
-        constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)));
+    try{
+        // Aguarda a resposta da função `listaVideos` da API
+        const listaApi = await conectaApi.listaVideos();
+        // Para cada elemento na lista da API, cria um card de vídeo e o adiciona à lista no DOM 
+        listaApi.forEach(elemento => lista.appendChild(
+            constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)));
+    }catch{
+        lista.innerHTML = `<h2 class="mensagem__titulo">Não foi possível carregar a lista de vídeos</h2>`
+    }        
 }
 
 // Chama a função `listaVideos` para iniciar o processo de listar os vídeos

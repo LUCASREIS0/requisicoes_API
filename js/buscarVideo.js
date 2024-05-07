@@ -25,7 +25,13 @@ async function buscarVideo(evento) {
 
     // Para cada vídeo retornado pela busca, constrói um card utilizando a função 'constroiCard' e o adiciona à lista
     busca.forEach(elemento => lista.appendChild(
-        constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem)));
+        constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem))
+    );
+
+    if (busca.length == 0) {
+        // Se o array de resultados da busca estiver vazio, exibe uma mensagem na lista de vídeos
+        lista.innerHTML = `<h2 class="mensagem__titulo">Não existem vídeos com esse termo</h2>`;
+    }    
 }
 
 // Obtém a referência ao botão de pesquisa

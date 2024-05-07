@@ -28,6 +28,11 @@ async function criaVideo(titulo, descricao, url, imagem) {
             imagem: imagem // URL da imagem do vídeo
         })
     }); 
+    if (!conexao.ok) {
+        // Se a resposta da conexão não estiver bem-sucedida (ou seja, status diferente de 200-299),
+        // lança um erro com uma mensagem indicando que não foi possível enviar o vídeo
+        throw new Error("Não foi possível enviar o vídeo");
+    }
 
     // Converte a resposta da solicitação para JSON
     const conexaoConvertida = conexao.json();
