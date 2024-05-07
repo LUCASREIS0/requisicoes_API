@@ -1,23 +1,18 @@
+# Conclusão: Desenvolvimento do Projeto em JavaScript para Requisições
 
-<p><h1>🚧 Projeto em Desenvolvimento - JavaScript: criando requisições 🚧</h1></p>
+Durante o desenvolvimento deste projeto, concentrei-me em explorar os fundamentos do JavaScript para criar uma plataforma de compartilhamento de vídeos dinâmica. Os principais aspectos abordados incluíram:
 
-<p align="center"> Página inicial e formulário de cadastro de vídeos, uma plataforma de compartilhamento de vídeos.</p>
+**Tecnologias e Conceitos:**
+- JavaScript: Utilizado para manipular requisições e interagir dinamicamente com a interface do usuário.
+- NodeJS: Empregado na criação do ambiente de servidor para a API fake.
+- Json-server: Utilizado para criar e simular uma API falsa para o projeto.
+- Requisições HTTP: Aprendi a realizar requisições GET e POST para interagir com a API, possibilitando operações de leitura e escrita de dados.
+- Manipulação do DOM: Desenvolvi habilidades para exibir dinamicamente os resultados das requisições na interface do usuário.
+- Funcionalidade de busca: Implementei uma ferramenta de busca para facilitar a localização de vídeos na plataforma.
 
-<p>Objetivo do curso: Transformar em uma plataforma dinâmica, permitindo a exibição de vídeos, o upload de novos vídeos e a implementação de uma ferramenta de busca.
-Tecnologias e conceitos abordados:
-Instalação do NodeJS e do json-server.
-Criação de uma API fake com json-server.
-Utilização de requisições GET e POST para interagir com a API.
-Manipulação do DOM para exibir os resultados das requisições e implementar a funcionalidade de busca.</p>
+Ao longo do curso, foquei exclusivamente no desenvolvimento com JavaScript, sem a utilização de HTML ou CSS para a construção da interface. Essa abordagem me permitiu mergulhar profundamente na linguagem e compreender suas capacidades para criar aplicações web interativas e dinâmicas.
 
-## Tecnologias utilizadas durante o curso
-* Javascript
-* NodeJS
-* Json-server
-
-## Tecnologias utilizadas no projeto
-* HTML
-* CSS
+Este projeto foi uma oportunidade valiosa para consolidar meu conhecimento em JavaScript e me capacitar a criar aplicações completas e funcionais no futuro, utilizando exclusivamente essa linguagem de programação.
 
 ## Screenshot
 ![Screenshot da tela do formulário do AluraPlay](https://imgur.com/ShNADf2.png)
