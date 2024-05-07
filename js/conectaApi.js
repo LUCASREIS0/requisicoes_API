@@ -36,8 +36,20 @@ async function criaVideo(titulo, descricao, url, imagem) {
     return conexaoConvertida;
 }
 
+async function buscaVideo(termoDeBusca) {
+    // Realiza uma requisição GET para o servidor local na porta 3000, passando o termo de busca como parte da query string
+    const conexao = await fetch(`http://localhost:3000/videos?q=${termoDeBusca}`);
+    
+    // Converte a resposta da requisição para JSON
+    const conexaoConvertida = await conexao.json();
+
+    // Retorna os dados convertidos
+    return conexaoConvertida;
+}
+
 // Exporta um objeto chamado conectaApi, que contém as funções listaVideos e criaVideo
 export const conectaApi = {
     listaVideos, // Função para listar vídeos
-    criaVideo // Função para criar um novo vídeo
+    criaVideo, // Função para criar um novo vídeo
+    buscaVideo // Função para Buscar vídeos
 }
